@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #ffffff;
+    color: #031070;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 3px solid #031070;
+}
+
+header h1 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 2.5rem;
+    color: #031070;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #031070;
+}
+
+.banner-image {
+    max-width: 950px; /* ขนาดสูงสุด 950px */
+    width: 100%; /* Responsive */
+    height: auto; /* รักษาสัดส่วน */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Section Styling */
+.section {
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+    color: #ddbd00;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Divider Styling */
+.divider {
+    border: none;
+    border-top: 2px dashed #cccccc;
+    margin: 30px auto;
+    width: 50%;
+}
+
+/* Table Styling */
+.table {
+    margin: 20px auto;
+    max-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0 15px; /* เพิ่มระยะห่างระหว่างแถว */
+    background-color: #ffffff;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.table-header th {
+    background-color: #031070;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Button Styling */
+.btn-view {
+    background-color: #ddbd00;
+    color: #031070;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view:hover {
+    background-color: #c5a800;
+    color: white;
+    transform: scale(1.05); /* เพิ่มเอฟเฟกต์การขยายเมื่อ hover */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #031070;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px; /* ขนาดวงกลม */
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    background-color: white;
+    color: #031070;
+    font-size: 1.4rem; /* ขนาดไอคอน */
+    text-align: center;
+    margin: 0 5px; /* เพิ่มระยะห่างซ้าย-ขวา */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:hover {
+    background-color: #ddbd00;
+    color: white;
+    transform: scale(1.1); /* ขยายเมื่อ Hover */
+}
+
+/* สีไอคอนเฉพาะ */
+.social-link.facebook:hover {
+    background-color: #4267B2; /* สี Facebook */
+}
+
+.social-link.line:hover {
+    background-color: #00c300; /* สี LINE */
+}
+
+.social-link.whatsapp:hover {
+    background-color: #25D366; /* สี WhatsApp */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .banner-image {
+        max-width: 100%; /* ใช้ขนาดเต็มหน้าจอ */
+    }
+
+    .section h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-view {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn-view {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        font-size: 0.8rem;
+    }
+}
+.preview-container {
+    position: relative;
+    display: inline-block;
+}
+
+.preview {
+    position: absolute;
+    top: 110%; /* ตำแหน่งแสดง preview ใต้ปุ่ม */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* ความกว้างของ iframe */
+    height: 200px; /* ความสูงของ iframe */
+    display: none; /* ซ่อน preview ไว้ก่อน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.preview-container:hover .preview {
+    display: block; /* แสดง preview เมื่อ hover */
+}
+
+
